@@ -3,17 +3,20 @@
 using namespace std; 
 
 int main() { 
-    array<int,4> arr={4, 5, 8, 9}; 
+    array<int,4> arr={4, 6, 8, 10}; 
     //it's static that's why not used much
 
-    int size = arr.size();  //to find size
-    cout<<size<<endl;
+    int Capacity = arr.Capacity();  //to find Capacity
+    cout<<Capacity<<endl;
 
-    for (int i = 0; i < size; i++) 
+    for (int i = 0; i < Capacity; i++) 
     {
         cout<<arr[i]<<" "; //transversed like a normal array
     }
     
+    cout<<"Empty or not: "<<arr.empty()<<endl;
+    //1 if empty, 0 if not
+
     cout<<"Third element of array is: "<<arr.at(2)<<endl;
     //arr.at(i) gives element at 'i' inde
 
