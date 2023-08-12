@@ -6,10 +6,10 @@ int main() {
     array<int,4> arr={4, 6, 8, 10}; 
     //it's static that's why not used much
 
-    int Capacity = arr.Capacity();  //to find Capacity
-    cout<<Capacity<<endl;
+    int size = arr.size();  //to find Capacity
+    cout<<size<<endl;
 
-    for (int i = 0; i < Capacity; i++) 
+    for (int i = 0; i < size; i++) 
     {
         cout<<arr[i]<<" "; //transversed like a normal array
     }
