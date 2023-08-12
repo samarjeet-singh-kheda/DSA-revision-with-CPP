@@ -35,7 +35,7 @@ int main() {
      
      cout<<"Size of deque after erase: "<<d.size()<<endl;
 
-//even after erase *MAX_SIZE* of deque remains the same
+//even if size of deque becomes zero after erase, *MAX_SIZE* still remains the same
 
      return 0;
 }
