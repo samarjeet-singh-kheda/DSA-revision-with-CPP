@@ -30,6 +30,40 @@ int main() {
     }
     cout<<endl;
 
+    s.erase(s.begin());
+
+    //after erase
+    for(auto i: s){
+          cout<<i<<" ";  //in sorted order
+    }
+    cout<<endl;
+
+    set<int>::iterator it=s.begin();
+    it++;
+
+    s.erase(it);
+
+    for(auto i: s){
+          cout<<i<<" ";  //in sorted order
+    }
+    cout<<endl;
+
+    cout<<"Is 5 present in the set? "<<s.count(5)<<endl;
+    cout<<"Is -5 present in the set? "<<s.count(-5)<<endl;
+
+    set<int>::iterator itr=s.find(5);
+    //itr gives refrence of value
+
+    cout<<"Iterator of 5 is "<<*itr<<endl;
+
+    //i gives refrence of value
+    for (auto i = itr; i != s.end(); i++)
+    {
+      cout<<*i<<" ";
+    }
 
      return 0;
 }
+
+//insert, find, erase & count -> O(log(n))
+//size, begin, empty & end -> O(1)
