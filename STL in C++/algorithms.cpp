@@ -14,7 +14,7 @@ int main() {
      cout<<"Greater element: "<<max(a,b)<<endl;
      cout<<"Smaller element: "<<min(a,b)<<endl;
 
-     cout<<"After swapping: "<<endl;
+     cout<<"After swapping ->"<<endl;
      swap(a, b);
      cout<<"a: "<<a<<endl<<"b: "<<b<<endl;
 
@@ -22,22 +22,31 @@ int main() {
      reverse(s.begin()+4, s.end()-2);
      cout<<"Reversed string: "<<s<<endl;
 
+     reverse(v.begin(), v.end());
+     cout<<"Reversing vector: ";
+     for(auto i: v){
+          cout<<i<<" ";
+     }
+     cout<<endl;
+
+     //roatate(begin_itr, middle_itr, end_itr)
+     //roatates at middle_itr
      rotate(v.begin(), v.begin()+2, v.end());
-     cout<<"After rotation of b by 2 places: "<<endl;
+     cout<<"After rotation of b by 2 places: ";
      for(auto i: v){
           cout<<i<<" ";
      }
      cout<<endl;
 
      sort(s.begin(), s.end());
-     cout<<"After sorting: "<<endl;
+     cout<<"After sorting: ";
      for(auto i: s){
           cout<<i<<" ";
      }
      cout<<endl;
 
      sort(v.begin(), v.end());
-     cout<<"After sorting: "<<endl;
+     cout<<"After sorting: ";
      for(auto i: v){
           cout<<i<<" ";
      }
