@@ -2,7 +2,7 @@
 *
 
 # Unignore all with extensions
-!*.*
+!*.cpp
 
 # Unignore all dirs
 !*/
